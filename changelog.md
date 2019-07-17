@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.1.2 (2019-06-17)
+
+### Chore
+* publish in public
+
 ## 0.1.1 (2019-06-12)
 
 ### Bug Fixes
