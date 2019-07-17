@@ -29,4 +29,7 @@ const LazyComponent = lazy(() => import('@uploadcare/react-widget'))
 </ClientSuspense>
 ```
 
+[▶ Demo Sandbox][gatsby-demo]
+
 [es6-debate]: https://gist.github.com/Rich-Harris/51e1bf24e7c093469ef7a0983bad94cb
+[gatsby-demo]: https://codesandbox.io/s/gatsby-suspense-example-6g020
