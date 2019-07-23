@@ -1,5 +1,7 @@
 {
+  "env": { "browser": true, "node": true, "jest": true },
   "extends": ["standard", "eslint-config-standard-jsx"],
+  "parser": "babel-eslint",
   "plugins": [
     "react-hooks"
   ],
