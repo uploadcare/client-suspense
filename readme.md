@@ -36,7 +36,7 @@ const LazyComponent = lazy(() => import('@uploadcare/react-widget'))
 
 [es6-debate]: https://gist.github.com/Rich-Harris/51e1bf24e7c093469ef7a0983bad94cb
 [gatsby-demo]: https://codesandbox.io/s/gatsby-suspense-example-6g020
-[build-img]: https://img.shields.io/travis/com/uploadcare/client-suspense.svg
+[build-img]: https://api.travis-ci.com/uploadcare/client-suspense.svg?branch=master
 [build-link]: https://travis-ci.com/uploadcare/client-suspense
 [npm-img]: https://img.shields.io/npm/v/@uploadcare/client-suspense.svg
 [npm-link]: https://www.npmjs.com/package/@uploadcare/client-suspense
