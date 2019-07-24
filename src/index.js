@@ -7,7 +7,7 @@ const ClientOnly = ({ children, fallback }) => {
     setClientRender(false)
   }, [])
 
-  return isClientOnlyRender ? fallback : children
+  return isClientOnlyRender ? null : children
 }
 
 const ClientSuspense = ({ children, ...props }) => (
