@@ -9,7 +9,7 @@ import { lazy, ClientSuspense } from '../src/index'
 
 const Lazy = lazy(() => import('./component'))
 
-test.skip('server-side rendering', () => {
+test('server-side rendering', () => {
   const App = () => (
     <ClientSuspense fallback='nice'>
       <Lazy />
