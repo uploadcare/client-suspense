@@ -1,10 +1,12 @@
+import pkg from './package.json'
+
 export default [
   {
     input: 'src/index.js',
     external: ['react'],
     output: {
       format: 'esm',
-      file: 'dist/index.js',
+      file: pkg.module,
       sourcemap: false
     }
   },
@@ -13,7 +15,7 @@ export default [
     external: ['react'],
     output: {
       format: 'cjs',
-      file: 'dist/index.cjs.js',
+      file: pkg.main,
       sourcemap: false
     }
   }
