@@ -10,7 +10,8 @@
   "scripts": {
     "test": "NODE_ENV=test jest --verbose",
     "build": "babel src -d dist",
-    "prepublish": "yarn build"
+    "prepublish": "yarn build",
+    "release": "release-it"
   },
   "peerDependencies": {
     "react": "^16.8.6"
@@ -20,6 +21,7 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
+    "@release-it/conventional-changelog": "^1.1.0",
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^8.0.6",
     "babel-eslint": "^10.0.2",
@@ -36,6 +38,24 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
+    "release-it": "^12.3.5",
     "rollup": "^1.19.4"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "changelog.md"
+      }
+    }
   }
 }
