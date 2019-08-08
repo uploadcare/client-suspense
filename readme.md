@@ -5,8 +5,6 @@
 
 > A hacky way to start using React Suspense in production.
 
-> [▶ Demo Sandbox][gatsby-demo]
-
 In short, Suspense allows you to defer rendering part of your application tree
 until some condition is met (for example, some data are loaded).
 
