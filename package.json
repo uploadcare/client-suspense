@@ -1,16 +1,16 @@
 {
   "name": "@uploadcare/client-suspense",
   "version": "0.1.3",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "files": [
     "dist"
   ],
   "license": "MIT",
   "scripts": {
-    "test": "NODE_ENV=test jest --verbose",
-    "build": "babel src -d dist",
-    "prepublish": "yarn build",
+    "test": "jest --verbose",
+    "build": "rollup -c",
+    "prepare": "npm run build",
     "release": "release-it"
   },
   "peerDependencies": {
@@ -38,7 +38,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
-    "release-it": "^12.3.5"
+    "release-it": "^12.3.5",
+    "rollup": "^1.19.4"
   },
   "release-it": {
     "git": {
