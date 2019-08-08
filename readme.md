@@ -3,12 +3,19 @@
 [![Build Status][build-img]][build-link]
 [![NPM version][npm-img]][npm-link]
 
-hacky way to use the React Suspense in production now
+> A hacky way to use the React Suspense in production now.
 
-## This library comes untranspiled
+> [▶ Demo Sandbox][gatsby-demo]
 
-Want to support IE11 → make sure you transpile `node_modules`.
-> [debate][es6-debate]
+In short, Suspense allows you to defer rendering part of your application tree
+until some condition is met (for example, data from an endpoint or a resource
+is loaded).
+
+While the React Suspense is still in experimental mode and not suitable for
+production, the package provides and easy-to-use production-ready alternative.
+
+**Note: This library comes untranspiled**. It means, if you want to support
+IE11, make sure you transpile `node_modules`. → [Read More][es6-debate] ←
 
 ## Install
 
