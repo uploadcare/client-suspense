@@ -5,15 +5,15 @@
 import React from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 
-import { lazy, ClientSuspense } from '../src/index'
+import { lazy, Suspense } from '../src/index'
 
 const Lazy = lazy(() => import('./component'))
 
 test('server-side rendering', () => {
   const App = () => (
-    <ClientSuspense fallback='nice'>
+    <Suspense fallback='nice'>
       <Lazy />
-    </ClientSuspense>
+    </Suspense>
   )
 
   const rendered = renderToStaticMarkup(<App />)

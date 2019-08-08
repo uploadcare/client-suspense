@@ -30,13 +30,13 @@ yarn add @uploadcare/client-suspense
 ## Usage
 
 ```jsx
-import { ClientSuspens, lazy } from '@uploadcare/client-suspense'
+import { Suspense, lazy } from '@uploadcare/client-suspense'
 
 const LazyComponent = lazy(() => import('@uploadcare/react-widget'))
 
-<ClientSuspense fallback='loading...'>
+<Suspense fallback='loading...'>
   <LazyComponent />
-</ClientSuspense>
+</Suspense>
 ```
 
 [▶ Demo Sandbox][gatsby-demo]
