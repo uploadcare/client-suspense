@@ -1,3 +1,15 @@
+# [1.0.0](https://github.com/uploadcare/client-suspense/compare/1.1.3...1.0.0) (2019-08-08)
+
+
+### Code Refactoring
+
+* simplify code ([#5](https://github.com/uploadcare/client-suspense/issues/5)) ([b3c6c29](https://github.com/uploadcare/client-suspense/commit/b3c6c29))
+
+
+### BREAKING CHANGES
+
+* rename `ClientSuspense` to `Suspense`
+
 ## 0.1.3 (2019-06-25)
 
 ### Chore
