@@ -1,9 +1,9 @@
 # сlient-suspense
 
+> A hacky way to start using React Suspense in production.
+
 [![Build Status][build-img]][build-link]
 [![NPM version][npm-img]][npm-link]
-
-> A hacky way to start using React Suspense in production.
 
 In short, Suspense allows you to defer rendering part of your application tree
 until some condition is met (for example, some data are loaded).
