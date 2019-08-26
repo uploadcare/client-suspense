@@ -50,7 +50,8 @@
   },
   "release-it": {
     "git": {
-      "commitMessage": "chore: release ${version}"
+      "commitMessage": "chore: release ${version}",
+      "commitArgs": "--no-verify"
     },
     "github": {
       "release": true
