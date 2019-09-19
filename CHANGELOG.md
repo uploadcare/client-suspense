@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/uploadcare/client-suspense/compare/1.0.0...1.0.1) (2019-09-19)
+
+
+### Bug Fixes
+
+* revert client check for avoiding hydration problems ([#12](https://github.com/uploadcare/client-suspense/issues/12)) ([e4c1614](https://github.com/uploadcare/client-suspense/commit/e4c1614))
+
 # [1.0.0](https://github.com/uploadcare/client-suspense/compare/1.1.3...1.0.0) (2019-08-08)
 
 
