@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/uploadcare/client-suspense/compare/1.0.1...1.0.2) (2019-10-30)
+
+
+### Bug Fixes
+
+* es6 to es5 ([#15](https://github.com/uploadcare/client-suspense/issues/15)) ([b79db27](https://github.com/uploadcare/client-suspense/commit/b79db2764c80bffe0d730ab06a09ef16ec46e093))
+
 ## [1.0.1](https://github.com/uploadcare/client-suspense/compare/1.0.0...1.0.1) (2019-09-19)
 
 
