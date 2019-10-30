@@ -1,12 +1,15 @@
 import { createElement as h, lazy, Suspense, useState, useEffect } from 'react'
 
-const ClientSuspense = props => {
-  const hook = useState(false);
-  const isClient = hook[0];
-  const setClient = hook[1];
-  useEffect(() => setClient(true), [])
+function ClientSuspense(props) {
+  var hook = useState(false),
+    isClient = hook[0],
+    setClient = hook[1];
 
-  return isClient ? h(Suspense, props) : props.fallback
+  useEffect(function() {
+    setClient(true), []);
+  });
+
+  return isClient ? h(Suspense, props) : props.fallback;
 }
 
 export { lazy, ClientSuspense as Suspense }
