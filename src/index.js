@@ -6,8 +6,8 @@ function ClientSuspense(props) {
     setClient = state[1];
 
   useEffect(function() {
-    setClient(true), []);
-  });
+    setClient(true);
+  }, [])
 
   return isClient ? h(Suspense, props) : props.fallback;
 }
