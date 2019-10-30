@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "test": "jest --verbose",
+    "test": "eslint ./src ./test && jest --verbose",
     "build": "rollup -c",
     "prepare": "npm run build",
     "release": "release-it"
