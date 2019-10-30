@@ -1,9 +1,9 @@
 import { createElement as h, lazy, Suspense, useState, useEffect } from 'react'
 
 function ClientSuspense(props) {
-  var hook = useState(false),
-    isClient = hook[0],
-    setClient = hook[1];
+  var state = useState(false),
+    isClient = state[0],
+    setClient = state[1];
 
   useEffect(function() {
     setClient(true), []);
