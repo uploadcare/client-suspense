@@ -11,9 +11,6 @@ until some condition is met (for example, some data are loaded).
 While React Suspense is still in experimental mode and not suitable for
 production, this package provides an easy-to-use production-ready alternative.
 
-**Note**, this library comes untranspiled. It means, if you want to support
-IE11, make sure you transpile `node_modules`. [Learn more][es6-debate].
-
 ## Install
 
 ```
