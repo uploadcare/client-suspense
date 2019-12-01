@@ -1,8 +1,5 @@
 {
-  "extends": ["config:base"],
-  "automerge": true,
-  "major": {
-    "automerge": false
-  },
-  "assignees": "jeetiss"
+  "extends": ["config:js-lib", "schedule:earlyMondays", ":automergeMinor"],
+  "assignees": "jeetiss",
+  "timezone": "Europe/Moscow"
 }
