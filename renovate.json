@@ -1,5 +1,5 @@
 {
   "extends": ["config:js-lib", "schedule:earlyMondays", ":automergeMinor"],
-  "assignees": "jeetiss",
+  "reviewers": "jeetiss",
   "timezone": "Europe/Moscow"
 }
