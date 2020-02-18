@@ -10,8 +10,8 @@
   "scripts": {
     "test": "eslint ./src ./test && jest --verbose",
     "build": "rollup -c",
-    "prepare": "npm run build",
-    "release": "release-it"
+    "release:prepare": "shipjs prepare",
+    "release:trigger": "shipjs trigger"
   },
   "peerDependencies": {
     "react": "^16.8.6"
@@ -21,7 +21,6 @@
     "@babel/core": "7.8.4",
     "@babel/preset-env": "7.8.4",
     "@babel/preset-react": "7.8.3",
-    "@release-it/conventional-changelog": "1.1.0",
     "@testing-library/jest-dom": "5.1.1",
     "@testing-library/react": "9.4.0",
     "babel-eslint": "10.0.3",
@@ -38,24 +37,7 @@
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-test-renderer": "16.12.0",
-    "release-it": "12.4.3",
-    "rollup": "1.31.1"
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release ${version}"
-    },
-    "github": {
-      "release": true
-    },
-    "npm": {
-      "publish": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "angular",
-        "infile": "CHANGELOG.md"
-      }
-    }
+    "rollup": "1.31.1",
+    "shipjs": "0.15.0"
   }
 }
