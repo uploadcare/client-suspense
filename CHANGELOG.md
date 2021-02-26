@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/uploadcare/client-suspense/compare/v1.0.3...v1.0.4) (2021-02-26)
+
+### Chore
+* Fix passing npm token to the shipjs workflow
+* Update dev dependencies
+
 ## [1.0.3](https://github.com/uploadcare/client-suspense/compare/1.0.2...1.0.3) (2021-02-26)
 
 ### Chore
