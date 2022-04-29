@@ -10,8 +10,7 @@
   "scripts": {
     "test": "eslint ./src ./test && jest --verbose",
     "build": "rollup -c",
-    "release:prepare": "shipjs prepare",
-    "release:trigger": "shipjs trigger"
+    "release": "shipjs prepare"
   },
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0.0 || ^18.0.0"
@@ -38,6 +37,6 @@
     "react-dom": "18.1.0",
     "react-test-renderer": "18.1.0",
     "rollup": "2.39.1",
-    "shipjs": "0.23.0"
+    "shipjs": "0.24.4"
   }
 }
