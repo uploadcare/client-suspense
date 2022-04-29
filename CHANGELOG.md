@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/uploadcare/client-suspense/compare/v1.0.5...v1.1.0) (2022-04-29)
+
+
+### Features
+
+* add react 18 support ([#115](https://github.com/uploadcare/client-suspense/issues/115)) ([9912ab5](https://github.com/uploadcare/client-suspense/commit/9912ab51f8089789ecbe411adb5efd6b38c41137))
+
+
+
 ## [1.0.5](https://github.com/uploadcare/client-suspense/compare/v1.0.4...v1.0.5) (2021-02-26)
 
 ### Chore
