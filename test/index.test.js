@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import '@testing-library/jest-dom/extend-expect'
 
 import React from 'react'
@@ -34,9 +38,8 @@ test('render childrens when no suspended components provided', () => {
   expect(getByText(testMessage)).toBeInTheDocument()
 })
 
-const Lazy = lazy(() => import('./component'))
-
 test('render fallback when have suspended component', () => {
+  const Lazy = lazy(() => import('./component'))
   const { getByText } = render(
     <Suspense fallback='loading'><Lazy /></Suspense>
   )
