@@ -38,8 +38,11 @@ test('render childrens when no suspended components provided', () => {
   expect(getByText(testMessage)).toBeInTheDocument()
 })
 
-test('render fallback when have suspended component', () => {
-  const Lazy = lazy(() => import('./component'))
+test('render fallback when have suspended component', async () => {
+  const moduleLoader = () => import('./component')
+  // Prevent module loading after test tear down
+  await moduleLoader()
+  const Lazy = lazy(moduleLoader)
   const { getByText } = render(
     <Suspense fallback='loading'><Lazy /></Suspense>
   )
