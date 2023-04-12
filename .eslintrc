@@ -1,12 +1,12 @@
 {
   "env": { "browser": true, "node": true, "jest": true },
   "extends": ["standard", "eslint-config-standard-jsx"],
-  "parser": "babel-eslint",
   "plugins": [
     "react-hooks"
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
-  }
+  },
+  "ignorePatterns": ["node_modules/", "dist/"]
 }
